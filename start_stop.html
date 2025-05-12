@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="start()">start</button>
+    <button onclick="stop()">stop</button>
+</body>
+<script>
+    var my;
+    function start(){
+        my=setTimeout(
+            function(){
+document.write("hello")
+            },
+            5000
+        );
+    }
+    function stop(){
+        clearTimeout(my);
+        alert("stop the page");
+    }
+</script>
+</html>

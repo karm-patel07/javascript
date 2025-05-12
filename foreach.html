@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var cars=["car1","car2"];
+        cars.foreach(car);
+        function car(item){
+              document.write(item);
+        }
+    </script> -->
+</body>
+<script>
+    var cars=["car1","car2"];
+    cars.foreach(car);
+    function car(item,index,array){
+        //   document.write(item);
+array[item]=item+"0";
+
+
+    }
+    cars.foreach(after);
+    function after(item,index){
+        //   document.write(item);
+        document.write(index +"=>"+item);
+    }
+
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="name" id="name"/>
+    <button onclick="greet()"> greet </button>
+    <div class="greet12"></div>
+</body>
+<script>
+    function greet(){
+        var name=document.getElementById('name').value;
+        var string= "hello" + name;
+        document.getElementsByClassName('greet12')[0].innerHTML = string;
+//    alert(string);
+    }
+</script>
+</html>

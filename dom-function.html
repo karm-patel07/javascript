@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOCUMENT OBJECT MODEL 
+    1. DOCUMENT.GETELEMENTBYID() 
+    2. DOCUMENT.GETELEMENTBYCLASSNAME()
+    3.INNER HTML 
+     -->
+    <!-- <div id="main" class="test">
+        welcome to my javascript code -->
+       <h1>1</h1>
+        <div class="main">
+
+            welcome to my code
+        </div>
+        <h1>2</h1>
+        <div class="main">
+           my code
+        </div>
+        
+            <!-- <h1>
+                Hii guys
+            </h1> -->
+      
+    </div>
+    <script>
+        // var x=document.getElementById("main" ).innerHTML;
+        // console.log(x);
+        // document.getElementById("main" ).innerHTML="<h1>welcome to my code</h1>";
+          //    alert(x);
+       var x= document.getElementsByClassName("main")[0].innerHTML ="my code";
+
+       var x= document.getElementsByClassName("main")[1].innerHTML ="welcome to my code";
+  
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="hello()">click me</button>
+    <h1 id="res"></h1>
+</body>
+<script>
+function hello(){
+    try{
+       //// alertf("hello!")   in this line error is alertf
+       alert("hello")
+    }
+    catch(err){
+                 document.getElementById('res').innerText=err;
+
+    }
+}
+    
+</script>
+</html>

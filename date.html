@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 id="res"></h1>
+    <button onclick="getDate()">date</button>
+    <button onclick="year()">Year</button>
+    <button onclick="month()">month</button>
+    <button onclick="hour()">hour</button>
+    <button onclick="toDate()">toDate</button>
+    <button onclick="Day()">day</button>
+    <button onclick="min()">min</button>
+    <button onclick="Time()">Time</button>
+    <button onclick="sec()">second</button>
+
+
+</head>
+<body>
+      
+</body>
+<script>
+    var Date= new Date();
+ function getDate(){
+    document.getElementById('res').innerText=Date;
+}
+
+function year(){
+    document.getElementById('res').innerText=Date.getFullYear();
+}
+function month(){
+    var month=["jan","feb","march","april","may","june","july","aug","sep","octo","nev","dec"];
+    document.getElementById('res').innerText=month[Date.getMonth()];
+}
+function hour(){
+   // var month=["jan","feb","march","april","may","june","july","aug","sep","octo","nev","dec"];
+    document.getElementById('res').innerText=Date.getHours();
+}
+function toDate(){
+    // var month=["jan","feb","march","april","may","june","july","aug","sep","octo","nev","dec"];
+     document.getElementById('res').innerText=Date.getDate();
+ }
+ function min(){
+    // var month=["jan","feb","march","april","may","june","july","aug","sep","octo","nev","dec"];
+     document.getElementById('res').innerText=Date.getMinutes();
+ }
+ function Day(){
+     // var month=["jan","feb","march","april","may","june","july","aug","sep","octo","nev","dec"];
+      document.getElementById('res').innerText=Date.getDay();
+  }
+  function Time(){
+    // var month=["jan","feb","march","april","may","june","july","aug","sep","octo","nev","dec"];
+     document.getElementById('res').innerText=Date.getTime();
+  }
+  function sec(){
+    // var month=["jan","feb","march","april","may","june","july","aug","sep","octo","nev","dec"];
+     document.getElementById('res').innerText=Date.getSeconds();
+  }
+</script>
+</html>

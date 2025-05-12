@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="res"></h1>
+    <button onclick="pop()">pop</button>
+    <script>
+        var cars=["cars1","cars2","cars3","car4"];
+        var demo=cars;
+        document.getElementById('res').innerHTML=demo;
+        function pop(){
+            demo.pop();
+            document.getElementById('res').innerHTML=demo;
+        }
+    </script>
+</body>
+</html>
